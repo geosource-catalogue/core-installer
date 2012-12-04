@@ -2,6 +2,7 @@
 <langpack>
     <str id="core" txt="Core Package"/>
     <str id="core.description" txt="The GeoNetwork opensource application. This is the Spatial Data Catalog web application."/>
+    <str id="widget" txt="GeoNetwork Web-Client User Interface"/>
     <str id="idSampleM" txt="Sample metadata"/>
     <str id="idSampleM.description" txt="Import sample metadata for testing"/>
     <str id="geoserver" txt="GeoServer web map server"/>

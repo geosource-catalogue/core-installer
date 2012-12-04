@@ -4,15 +4,15 @@
 
 	<!-- =================================================================================== -->
   <skipIfNotSupported/>
-  <programGroup defaultName="GeoNetwork opensource" location="applications"/>
+  <programGroup defaultName="GeoSource" location="applications"/>
 
   <!-- =================================================================================== -->
 	<!-- GN open homepage -->
   
   <shortcut 
 		os="windows"
-		name="Open GeoNetwork opensource" 
-		description="This opens the GeoNetwork homepage in a web browser"
+		name="Ouvrir le catalogue" 
+		description="Ouverture du catalogue dans votre navigateur"
 		target="$INSTALL_PATH\bin\win\start-stdln.html"
 		commandLine="" 
 		workingDirectory="$INSTALL_PATH" 
@@ -29,8 +29,8 @@
    
 	<shortcut
 		os="windows"
-		name="Start server"
-		description="This starts the GeoNetwork server"
+		name="Lancer le serveur"
+		description="Lancement du catalogue (et du serveur Jetty)"
 		programGroup="yes"
 		desktop="no"
 		startup="no"
@@ -49,8 +49,8 @@
    
 	<shortcut
 		os="windows"
-		name="Stop server"
-		description="This stops the GeoNetwork server"
+		name="Arrêter le catalogue"
+		description="Arrêt du catalogue (et du serveur Jetty)"
 		programGroup="yes"
 		desktop="no"
 		target="$INSTALL_PATH/bin/stop-geonetwork.bat"
@@ -64,32 +64,13 @@
    </shortcut>
 	
 	<!-- =================================================================================== -->
-	<!-- GAST -->
-   
-	<shortcut
-		os="windows"
-		name="Start GAST"
-		description="This starts GeoNetwork's Administrator Survival Tool"
-		programGroup="yes"
-		desktop="no"
-		target="$INSTALL_PATH/bin/gast.bat"
-		initialState="noShow"
-		workingDirectory="$INSTALL_PATH/bin"
-		type="Application"
-		iconFile="$INSTALL_PATH/bin/ico/gast.ico"
-		iconIndex="0"
-		encoding="UTF-8">
-		<createForPack name="GAST"/>
-   </shortcut>
-	
-	<!-- =================================================================================== -->
 	<!-- Documentation -->
 	
 	<shortcut
 		os="windows"
 		name="Documentation" 
-		description="GeoNetwork opensource documentation"
-		target="$INSTALL_PATH\web\geonetwork\docs\eng\users"
+		description="GeoSource documentation"
+		target="http://www.geosource.fr/docs/"
 		commandLine="" 
 		workingDirectory="$INSTALL_PATH" 
 		iconFile="$INSTALL_PATH/bin/ico/docs.ico" 
@@ -98,24 +79,6 @@
 		programGroup="yes"
 		startup="no">
    </shortcut>
-
-  <!-- =================================================================================== -->
-  <!-- GN readme -->
-  
-  <shortcut 
-		os="windows"
-		name="Release notes " 
-		description="GeoNetwork desktop release notes "
-		target="$INSTALL_PATH\web\geonetwork\docs\readme.html"
-		commandLine="" 
-		workingDirectory="$INSTALL_PATH" 
-		iconFile="$INSTALL_PATH/bin/ico/text.ico" 
-		iconIndex="0" 
-		initialState="normal" 
-		programGroup="yes"
-		startup="no">
-		<createForPack name="Core"/>
-  </shortcut>
   
 	<!-- =================================================================================== -->
 	<!-- License -->
@@ -152,5 +115,22 @@
    </shortcut>
    
 	<!-- =================================================================================== -->
+    <!-- GAST 
    
+    <shortcut
+        os="windows"
+        name="Start GAST"
+        description="This starts GeoNetwork's Administrator Survival Tool"
+        programGroup="yes"
+        desktop="no"
+        target="$INSTALL_PATH/bin/gast.bat"
+        initialState="noShow"
+        workingDirectory="$INSTALL_PATH/bin"
+        type="Application"
+        iconFile="$INSTALL_PATH/bin/ico/gast.ico"
+        iconIndex="0"
+        encoding="UTF-8">
+        <createForPack name="Core"/>
+   </shortcut>-->
+    
 </shortcuts>
