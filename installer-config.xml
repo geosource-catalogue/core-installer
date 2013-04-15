@@ -134,7 +134,7 @@
       <description>Outil pour la migration d'annuaire de contacts au format XML</description>
       <fileset dir="../utility" targetdir="$INSTALL_PATH/utility"/>
     </pack>
-    
+   <!-- 
     <pack name="Jeevlet" required="no" preselected="no">
       <description> </description>
       <fileset dir="../jeevlet" targetdir="$INSTALL_PATH/jeevlet">
@@ -145,7 +145,7 @@
       <executable targetfile="$INSTALL_PATH/jeevlet/bin/startup.sh"/>
       <executable targetfile="$INSTALL_PATH/jeevlet/bin/shutdown.sh"/>
       <executable targetfile="$INSTALL_PATH/jeevlet/bin/node.sh"/>
-    </pack>
+    </pack>-->
   </packs>
 
   <!-- =================================================================================== -->
